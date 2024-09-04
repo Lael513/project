@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+:root{
+    
+ --Soft-blue :hsl(215, 51%, 70%);
+ --Cyan: hsl:(178, 100%, 50%);
+ 
+ --main-BG: hsl(217, 54%, 11%);
+ --card-BG: hsl(216, 50%, 16%);
+ --line: hsl(215, 32%, 27%);
+ --White: hsl(0, 0%, 100%);
+}
+p{
+    font-weight: 300;
+}
+
+
+
+body{
+    font-family:"Outfit" , Roboto;
+    font-size:18px;
+    background-color: var(--main-BG);
+    color: hsl(0, 0%, 100%,60%);
+    padding: 1.25rem;
+
+}
+.container{
+    padding: 1.25rem;
+    background-color: var(--card-BG);
+border-radius: 25px;
+margin-bottom: 15px;
+}
+
+.container  .main-image {
+  position: relative;
+
+}
+
+.container  .main-image div.laura {
+    position: absolute;
+    top: 0;
+    background-color:rgb(14, 221, 221,60%) ;
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container  .main-image div.laura:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container  .main-image div.laura img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.container h2{
+    color: var(--White);
+    margin:15px 6px 6px;
+
+}
+.container h2:hover{
+    color:rgb(14, 221, 221) ;
+    cursor: pointer;
+}
+.container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom:2px solid var(--line);
+}
+
+.container ul li{
+    display: flex;
+    align-items: center;
+}
+
+
+.container ul li:first-child {
+   color:rgb(14, 221, 221) ;
+}
+.container ul li img{
+    margin-right: 15px;
+}
+
+.container .avatar{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top:30px;
+}
+
+.container .avatar img{
+    width: 58.5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 7.5px;
+}
+.container .avatar p span{
+    color: var(--White);
+    font-weight: 400;
+}
+.container .avatar p span:hover{
+color: rgb(14, 221, 221);
+cursor: pointer;
+}
+.attribution 
+{ 
+    font-size: 16px; 
+    text-align: center;
+ }
+.attribution a 
+{ color: hsl(228, 45%, 44%); }
+
+@media(min-width:500px) {
+   .container{
+    width: 450px;
+    margin: 0 auto 1rem
+   }
+
+   /* or 
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+        */
+}
