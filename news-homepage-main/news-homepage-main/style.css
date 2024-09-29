@@ -1,0 +1,203 @@
+/*Import font from folder and giving it a name*/
+@font-face {
+    font-family: laura;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+:root{
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%)  ;
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    font-family: laura;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Off-white);
+}
+
+.container{
+    margin-left: 2.5rem;
+    padding: .9rem;
+}
+.flex-container{
+    display: flex;
+}
+
+.logo img{
+    color: var(--Very-dark-blue);
+    margin-top: 1rem;
+}
+.list ul{
+text-decoration: none;
+display: flex;
+flex-direction: row;
+}
+
+ul li{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+   padding-inline: 2rem;
+   position: relative;
+   left: 45rem;
+   bottom: 3rem;
+   color: var(--Dark-grayish-blue);
+   margin-top: 1rem;
+}
+
+ul li:hover{
+    cursor: pointer;
+    color: var(--Soft-red);
+    animation-delay: 2s;
+}
+.image img{
+width: 65%;
+height: 20rem;
+}
+
+.heading h1{
+    color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 58px;
+}
+
+
+
+.general{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.other{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    justify-content: space-around;
+    word-spacing: .2rem;
+    color: var(--Dark-grayish-blue);
+   width: auto;
+   line-height: 1.5rem;
+}
+
+.new{
+    background-color: var(--Very-dark-blue);
+    width: fit-content;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 58rem;
+    bottom: 36.5rem;
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--Soft-orange);
+    margin-bottom: 2rem;
+}
+
+h3{
+    color: var(--Off-white);
+    margin-bottom: 1.5rem;
+}
+
+h3:hover{
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+p.fun{
+    color: var(--Grayish-blue);
+    line-height: 2rem;
+}
+p.fund {
+    color: var(--Grayish-blue);
+    border-bottom: 2px solid var(--Grayish-blue);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-spacing: 1rem;
+    line-height: 2rem;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 30rem;
+    margin-bottom: -25rem;
+}
+
+.input-flex{
+    display: flex;
+}
+
+.fond {
+    display: flex;
+    flex-direction: row;
+}
+
+.mod{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+
+.center img {
+    height: 150px;
+}
+
+h1.mink{
+    color: var(--Soft-red);
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+
+label.peep{
+    color:black;
+    font-weight: 900;
+}
+
+label.peep:hover{
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+.center p{
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5rem;
+    margin-top: -0.5rem;
+}
+
+button.read{
+    width: 12rem;
+    padding: .9rem;
+    height: 3rem;
+    font-weight: bolder;
+    font-size: 15px;
+    word-spacing: .2rem;
+    margin-top: 2.5rem;
+    background-color: var(--Soft-red);
+    border: none;
+    letter-spacing: .2rem;
+}
+
+button.read:hover{
+    color: var(--Off-white);
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+}
