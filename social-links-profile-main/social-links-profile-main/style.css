@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+
+    --White: hsl(0, 0%, 100%);
+    
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: Inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey-900);
+}
+
+.container{
+    padding: 2rem 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey-800);
+    margin-top: 4rem;
+    border-radius: 2rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn {
+    font-family: Inter;
+    font-weight: 600;
+    color: var(--White);
+    background-color: var(--Grey-700);
+    border: none;
+    width: 280px;
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+}
+
+.btn:nth-child(1) {
+    margin-top: 1rem;
+}
+
+.btn:nth-child(5){
+    margin-bottom: 1rem;
+}
+
+.image img{
+    border-radius: 5rem;
+    width: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 30%;
+}
+
+.header h2{
+    position: relative;
+    left: 20%;
+    color: var(--White);
+    font-weight: 600;
+}
+
+.london{
+    color: var(--Green);
+    position: relative;
+    left: 18%;
+    bottom: 1rem;
+}
+
+.front{
+    color: var(--White);
+    font-weight: 200;
+    position: relative;
+    left: 2%;
+    bottom: .9rem;
+}
+
+@media (max-width: 1440px) {
+    body{
+       justify-content: center;
+       align-items: center;
+    }
+}
